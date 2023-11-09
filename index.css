@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "SF Pro Display", sans-serif;
+}
+body {
+  background-color: #0d0c0f;
+}
+header {
+  padding: 0.75rem 3.5rem;
+  border-bottom: 1px solid #838383;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+}
+.logo-g,
+.logo-w {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.logo-g {
+  color: #00925d;
+}
+.header-right {
+  gap: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.dropdown-banner {
+  display: none;
+}
+.dropdown-banner select {
+  border: none;
+  background-color: #0d0c0f;
+}
+.header-buttons {
+  display: flex;
+}
+.search-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.search-header input {
+  border: none;
+
+  width: 21.3125rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 2px solid rgba(0, 146, 93, 0.7);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 146, 93, 0.1) 10.16%,
+    rgba(255, 255, 255, 0) 66.56%
+  );
+}
+.search-header img {
+  position: absolute;
+  right: 1rem;
+}
+.notification {
+  color: #10141d;
+  background-color: #00925d;
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.header-buttons button {
+  display: flex;
+  padding: 0.75rem 3rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: #0d0c0f;
+}
+.language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.language select {
+  border: none;
+  background-color: #0d0c0f;
+}
+main {
+  display: flex;
+  
+}
+aside {
+  border-right: 1px solid #d9d9d9;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 20%;
+}
+aside button {
+  display: flex;
+  width: 100%;
+  height: 4.25rem;
+  padding: 1.125rem 3rem;
+  align-items: center;
+  gap: 0.75rem;
+  border: none;
+  background-color: #0d0c0f;
+}
+aside button:hover,
+aside button::selection {
+  border-right: 4px solid #00925d;
+  background: rgba(0, 146, 93, 0.1);
+}
+article {
+  width: 80%;
+}
+.banner {
+  height: 20rem;
+  position: relative;
+  padding-left: 3rem;
+  padding-bottom: 1.5rem;
+ 
+}
+.banner-btm {
+  position: absolute;
+  bottom: 0;
+}
+.banner-details {
+  width: 26rem;
+}
+.banner-details h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.banner-details span {
+  display: flex;
+  gap: 1rem;
+}
+.banner-details span p {
+  padding: 0.75rem 0rem;
+  color: #838383;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.banner-details h6 {
+  color: #8c8b8b;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.banner-btns {
+  display: flex;
+  margin: 1.5rem 0;
+  gap: 1.5rem;
+}
+.banner-btns button {
+  display: flex;
+  padding: 0.875rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.play-btn {
+  background: #00925d;
+}
+.watch-btn {
+  background-color: #3a3a3a;
+}
+.add-btn {
+  border: solid 1px #838383 !important;
+  background-color: transparent;
+}
+.sub-title {
+  padding: 0 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sub-title h1 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.open-close {
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  background: #00925d;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie-cat {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.movie-cat::-webkit-scrollbar {
+  display: none;
+}
+
+.film-section {
+  gap: 2rem;
+  padding: 0rem 3rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+.duration {
+  color: #838383;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.film-title {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0.69rem;
+  width: 10rem;
+  justify-content: space-between;
+}
+.film-title p {
+  font-size: 0.875rem;
+}
+.menu {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  aside {
+    width: 35%;
+  }
+  article {
+    width: 65%;
+  }
+
+  header {
+    padding: 0.75rem 2rem;
+  }
+  .header-right {
+    gap: 1.5rem;
+  }
+  .header-buttons button {
+    padding: 0.75rem 1rem;
+  }
+  .search-header input {
+    width: 11rem;
+    padding: 0.75rem 1.5rem;
+    padding-left: 0.5rem;
+  }
+  .header-right {
+    gap: 1rem;
+  }
+  .search-header img {
+    right: 0.5rem;
+  }
+}
+@media (max-width: 1240px) {
+  aside {
+    width: 28%;
+  }
+  article {
+    width: 72%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-left: 1.5rem;
+  }
+  .banner-details {
+    width: 20rem;
+  }
+  .banner-btns {
+    margin: 1rem 0;
+    gap: 0.7rem;
+  }
+  .banner-btns button {
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  aside {
+    width: 15%;
+  }
+  article {
+    width: 85%;
+  }
+
+  aside button span {
+    display: none;
+  }
+  aside button {
+    width: 6rem;
+    padding: 1.125rem 3rem;
+    justify-content: center;
+  }
+  .notification {
+    display: none;
+  }
+  .dropdown-banner {
+    display: block;
+  }
+  .header-buttons {
+    display: none;
+  }
+  header {
+    padding: 0.75rem 1.5rem;
+    gap: 1rem;
+  }
+  .logo-g,
+  .logo-w {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 600px) {
+  aside {
+    width: 20%;
+  }
+  article {
+    width: 80%;
+  }
+  aside button img {
+    width: 20px;
+  }
+  aside button {
+    width: 90%;
+    height: 3rem;
+    padding: 1rem 1rem;
+  }
+
+  .open-close {
+    display: none;
+  }
+  .search-header input {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner {
+    padding-left: 0.1rem;
+  }
+  .banner-details h6 {
+    display: none;
+  }
+  .sub-title,
+  .film-section {
+    padding: 0 0.4rem;
+  }
+  .banner-btns {
+    gap: 0.3rem;
+  }
+  aside button {
+    width: 30%;
+    height: 3rem;
+  }
+  aside {
+    display: none;
+  }
+
+  .show-aside {
+    display: block;
+  }
+
+  .language {
+    display: none;
+  }
+  .dropdown-banner {
+    display: none;
+  }
+  aside {
+    width: 10%;
+  }
+  article {
+    width: 90%;
+  }
+  .menu {
+    display: block;
+  }
+  .banner-btns button {
+    padding: 0rem 0rem;
+
+    gap: 0rem;
+
+    font-size: 0.7rem;
+  }
+}
